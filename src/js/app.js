@@ -1,15 +1,8 @@
-import "../scss/app.scss";
-
-window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
-
-  const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    for (let i = 0; i < 5; i++) {
-      let article = document.createElement("article");
-      article.classList.add("message");
-      article.innerHTML = "This is message " + (i+1);
-      document.body.appendChild(article);
-    }
-  });
+document.addEventListener("click", () => {
+  for (let i = 0; i < 5; i++) {
+    let article = document.createElement("article");
+    article.classList.add("message");
+    article.innerHTML = "This is message " + (i+1);
+    document.body.appendChild(article);
+  }
 });
